@@ -4,10 +4,6 @@ body {
 	font:16px/1 Tahoma, sans-serif;
 }
 
-h1 {
-  margin-top: 200px;
-}
-
 header, h2, p {
 	text-align:center;
 }
@@ -50,6 +46,7 @@ body > footer {
       color: #0881b3; }
 
 .wrapper {
+  margin-top: 200px;
   max-width: 640px;
   margin: 0 auto;
   padding-top: 22px;  
