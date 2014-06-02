@@ -18,3 +18,23 @@ a {
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
     border-bottom: 1px solid; }
+
+/* HTML5 display-role reset for older browsers */
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body > header, body > section, body > footer {
+  max-width: 640px;
+  margin: 0 auto; }
+
+
+body > footer {
+  color: #aaa;
+  text-shadow: #fff 0 1px 0;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 3em auto; }
+  body > footer a {
+    color: #aaa; }
+    body > footer a:hover {
+      color: #0881b3; }
