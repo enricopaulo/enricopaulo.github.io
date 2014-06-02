@@ -27,10 +27,10 @@ a {
     border-bottom: 1px solid; }
 
 /* HTML5 display-role reset for older browsers */
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, h2 {
   display: block; }
 
-body > header, body > section, body > footer {
+body > header, body > section, body > footer, body > h2 {
   max-width: 640px;
   margin: 0 auto; }
 
