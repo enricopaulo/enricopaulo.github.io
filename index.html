@@ -1,45 +1,258 @@
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+ 
 <head>
-	<title>Enrico Paulo Lazarte</title>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://shinydemos.com/styles/screen.css">
-	<link rel="stylesheet" href="http://shinydemos.com/styles/screen-narrow.css" media="only screen and (max-width:550px)">
-	<link rel="stylesheet" href="http://shinydemos.com/styles/screen-wide.css" media="only screen and (min-width:800px) and (min-height:540px)">
-	<!--<link rel="icon" sizes="16x16" href="http://shinydemos.com/images/favicon.ico">
-	<link rel="apple-touch-icon-precomposed" href="http://shinydemos.com/images/favicon.png">-->
+	
+	<meta charset="utf-8">
+	
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Webknit | A little web studio</title>
+	<meta name="description" content="A little web studio.">
+	<meta name="author" content="Webknit" />
+	<meta name="description" content='A Web Workshop'>
+  	<meta name='keywords' content='Webknit, Shane Prendergast, Web Designer & Developer, Web Design, Branding, Logos, Websites' />
+	
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+	<link rel="shortcut icon" href="assets/img/favicon.png" />
+	
+	<!-- Single CSS stylesheet with multiple break points - one for the CSS styles of each module where multiple screen sizes need to be addressed.  -->
+	<!-- ems not PX. Calculate here http://pxtoem.com/. REM's are good but they require extra work. -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" media="screen">
+	<link rel="stylesheet" href="style.css" media="screen">	
+	
+	<!--Internet Explorer up to version 8.0 can't read HTML5 tags properly, you can't style them.-->
+	<!--[if lt IE 9]>
+	   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+	   mathiasbynens.be/notes/async-analytics-snippet -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-26260989-6', 'webknit.co.uk');
+	  ga('send', 'pageview');
+	
+	</script>
+	
+	<script type="text/javascript" src="//use.typekit.net/fyg7jym.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
+
 <body>
-	<div class="page-index" id="page-index">
-		<header class="header">
-			<div class="path">
-				<h1 id="title">Hi, I'm Enrico</h1>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-			</div>
+
+
+	<header class="main-header homepage-header">
+	
+	<div class="container row">
+
+		<img src="assets/img/webknit-dark.png" class="side-logo" />
+		
+		<span class="mobile-nav">
+	
+			<span class="bar bar-1"></span>
+			<span class="bar bar-2"></span>
+			<span class="bar bar-3"></span>
 			
-		</header>
+		</span><!-- .mobile-nav -->
+	
+		<nav class="main-menu menu-hover-effect calculate-menu">
+		
+	<ul>
+	
+		<li class="hide-homepage">
+		
+			<a href="about.html">
+			
+				About
+				
+			</a>
+		
+		</li>
+		
+		<li>
+		
+			<a href="work.html">
+			
+				Work
+				
+			</a>
+		
+		</li>
+		
+		
+		<li class="block-li no-opacity">
+		
+		</li>
+		
+		<li>
+		
+			<a href="play.html">
+			
+				Play
+				
+			</a>
+		
+		</li>
+	
+	</ul>
 
-		<nav class="navigation" id="navigation">
-		<p class="tagline">Hello, I'm a software engineer living in Cebu City, Philippines.  I work as a full-time iOS applications developer.</p>
-			<ul>
-				<li class="audio-video"><a href="#">Hello, I'm a software engineer living in Cebu City, Philippines.  I work as a full-time iOS applications developer.</a></li>
-				<!--<li class="audio-video"><a href="audio-video/">Audio &amp; Video</a></li>
-				<li class="canvas"><a href="canvas/">Canvas</a></li>
-				<li class="css3"><a href="css3/">CSS 3</a></li>
-				<li class="getusermedia"><a href="getusermedia/">getUserMedia</a></li>
-				<li class="svg"><a href="svg/">SVG</a></li>
-				<li class="touch"><a href="touch/">Touch</a></li>
-				<li class="webgl"><a href="webgl/">WebGL</a></li>-->
-			</ul>
-		</nav>
-		<footer class="footer">
-			<!--<p><a href="http://www.opera.com/developer/">Opera Software</a></p>-->
-		</footer>
-	</div>
-	<script src="http://shinydemos.com/scripts/modernizr.js"></script>
-	<script src="http://shinydemos.com/scripts/script.js"></script>
+</nav><!-- home-menu -->
+	
+	</div><!-- .container -->
+
+</header><!-- .main-header -->
+  
+  	<div class="splash">
+	
+		<section class="header-info center-center">
+		
+			<img src="assets/img/webknit-logo.png" class="header-logo" />
+			
+			<h2 class="home-intro-text">
+		
+				A little web studio.
+				<span>Based in the uk</span>
+			
+			</h2>
+		
+		</section><!-- header-info --> 
+		
+	</div><!-- .splash -->
+	
+	<section class="intro ss">
+	
+		<p>Webknit is a small design studio in the UK specialising in the design and implementation of great looking, functional websites.</p>
+		
+		<a class="btn" href="about.html">Find out more</a>
+	
+	</section><!-- .intro -->
+	
+	<section class="featured-project row">
+
+	<div class="container">
+	
+		<div class="one_two">
+		
+			<img src="assets/img/lazy.gif" data-original="assets/img/work/nick-and-steph.png" class="presentation-img lazy detect-retina-lazy" />
+		
+		</div><!-- one_two -->
+		
+		<div class="two_two">
+		
+			<h2>Latest project<span></span></h2>
+			
+			<p>We worked on the photograph and online photo album for the wedding of Nick &amp; Steph. The wedding was in a small picturesque town on the coast of Rhodes, the destination and wedding were both beautiful.</p>
+					
+					<p>After considering the best way to showcase the photos to friends &amp; family we came up with the idea of showing them online as opposed to a traditional physical photo album. The website is fully responsive and extremely simple to use, even for those older family members who aren't computer literate.</p>
+	
+					
+			<p><a href="http://nickandsteph.co.uk/">http://www.nickandsteph.com/</a></p>
+		
+		</div><!-- two_two -->
+	
+	</div><!-- .container -->
+
+</section><!-- .main-body -->
+	
+	<footer>
+	
+		<div class="container row">
+	
+			<div class="one_three">
+			
+				<h2>About<span></span></h2>
+				
+				<p>Webknit is a small design studio in the UK specialising in the design and implementation of great looking, functional websites.</p>
+				
+				<p class="email"><span class="fa fa-envelope"></span>contact@webknit.co.uk</p>
+				
+				<ul class="social">
+					<a target="_blank" href="http://twitter.com/#!/WebKnit"><li class="fa fa-twitter"></li></a>
+					<a target="_blank" href="https://www.facebook.com/pages/WebKnit/349266211816814"><li class="fa fa-facebook"></li></a>
+					<a target="_blank" href="http://dribbble.com/WebKnit"><li class="fa fa-dribbble"></li></a>
+					<a target="_blank" href="skype:webknit"><li class="fa fa-skype"></li></a>
+					<a target="_blank" href="http://instagram.com/webknit#"><li class="fa fa-instagram"></li></a>
+				</ul>
+			
+			</div><!-- one_three -->
+			
+			<div class="two_three">
+				
+				<h2>Links<span></span></h2>
+				
+				<ul class="links">
+					<li><a href="about.html">About Webknit<span class="fa fa-angle-double-right"></span></a></li>
+					<li><a href="http://base.webknit.co.uk/" target="_blank">Base<span class="fa fa-angle-double-right"></span></a></li>
+					<li><a href="http://worthyofnote.co.uk/" target="_blank">Worthy of Note<span class="fa fa-angle-double-right"></span></a></li>
+					<li><a href="http://capture.webknit.co.uk/" target="_blank">Capture<span class="fa fa-angle-double-right"></span></a></li>
+					<li><a href="http://www.shaneprendergast.co.uk/" target="_blank">Shane Prendergast<span class="fa fa-angle-double-right"></span></a></li>
+				</ul>
+			
+			</div><!-- two_three -->
+			
+			<div class="three_three">
+				
+				<h2>Get in touch<span></span></h2>
+				
+				<p>You've three options</p>
+				
+				<ul class="ways-contact">
+					<a href="mailto:contact@webknit.co.uk"><li><span class="title">Email</span><span class="fa-envelope-o fa"></span></li></a>
+					<a href="skype://webknit?chat"><li><span class="title">Skype</span><span class="fa-skype fa"></span></li></a>
+					<a href="https://twitter.com/WebKnit" target="_blank"><li><span class="title">Tweet</span><span class="fa-twitter-square fa"></span></li></a>
+				</ul>
+			
+			</div><!-- three_three -->
+			
+		</div><!-- .container -->
+		
+		<div class="row container copyright">
+		
+			<img src="assets/img/webknit-dark.png" />
+			
+			<p>© Webknit 2014. All rights Reserved.</p>
+		
+		</div>
+	
+	</footer>
+	
+	
+	
+	
+	
+	
+	<!-- JavaScript at the bottom for fast page loading -->
+	
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-v1.10.2.min.js"><\/script>')</script>
+	
+	<!-- scripts concatenated and minified via build script -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/script.js"></script>
+	<!-- end scripts -->
+
 </body>
 </html>
+	
