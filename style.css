@@ -4,7 +4,7 @@ body {
 	font:16px/1 Tahoma, sans-serif;
 }
 
-header {
+header, h2 {
 	text-align:center;
 }
 footer {
