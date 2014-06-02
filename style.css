@@ -30,7 +30,6 @@ body > header, body > section, body > footer {
 
 body > footer {
   color: #aaa;
-  text-shadow: #fff 0 1px 0;
   font-size: 0.8em;
   text-align: center;
   margin: 3em auto; }
