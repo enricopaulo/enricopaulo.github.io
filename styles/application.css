@@ -28,9 +28,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; 
-  background:#181818 url(../images/denim.png) 50% 0;
-}
+  line-height: 1; }
 
 ol, ul {
   list-style: none; }
@@ -58,6 +56,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
+  background:#181818 url(../images/denim.png) 50% 0;
   color: #222222;
   font-size: 22px;
   font-family: "Whitney A", "Whitney B";
