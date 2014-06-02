@@ -45,6 +45,10 @@ body > footer {
     body > footer a:hover {
       color: #0881b3; }
 
+.header {
+  margin-top: 200px;
+} 
+
 .wrapper {
   margin-top: 200px;
   max-width: 640px;
