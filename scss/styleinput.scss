@@ -1,0 +1,80 @@
+/* Custom and Fetched Mixins */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border($thickness, $bordertype, $bordercolor) { border: $thickness, $bordertype, $bordercolor; }
+
+@font-face {
+	font-family: 'RonniaBold';
+	src: url('../fonts/RonniaBold.otf');
+}
+@font-face {
+	font-family: 'RonniaExtraBold';
+	src: url('../fonts/RonniaExtraBold.otf');
+}
+@font-face {
+	font-family: 'RonniaReg';
+	src: url('../fonts/RonniaReg.otf');
+}
+@font-face {
+	font-family: 'ProxLight';
+	src: url('../fonts/ProximaNova-Light.otf');
+}
+
+
+/* Global Variables */
+$primary-font: 'RonniaReg';
+$primary-fontbold: 'RonniaBold';
+$primary-fontlight: 'ProxLight';
+$primary-color: #fcfcfc;
+
+/* Reusable CSS */
+.ssm-top { margin-top: 5px; }
+
+.sm-top { margin-top: 15px; }
+
+.md-top { margin-top: 25px; }
+
+.lg-top { margin-top: 50px; }
+
+.xlg-top { margin-top: 70px; }
+
+.text-center { text-align:center; }
+
+body, html { padding: 0; margin: 0; }
+
+body { 
+	color: $primary-color;
+	font-family: $primary-font;
+	background: url('../images/bg.png') repeat top left; 
+}
+
+h1, h2, h3, h4, h5, label { 
+	color: $primary-color;
+	font-family: $primary-font; 
+}
+
+p { 
+	font-size: 18px;
+	margin-top: 10px;
+	font-family: $primary-fontlight; 
+}
+
+.img-holder { 
+	height: 120px;
+	overflow-y: hidden;
+	padding: 3px!important;
+	background-color: transparent;
+
+
+	img { width: 100%; }
+
+	label { margin-top: 5px; }
+	
+}
+	
+

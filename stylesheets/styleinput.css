@@ -1,0 +1,94 @@
+/* Custom and Fetched Mixins */
+@font-face {
+  font-family: 'RonniaBold';
+  src: url("../fonts/RonniaBold.otf");
+}
+
+@font-face {
+  font-family: 'RonniaExtraBold';
+  src: url("../fonts/RonniaExtraBold.otf");
+}
+
+@font-face {
+  font-family: 'RonniaReg';
+  src: url("../fonts/RonniaReg.otf");
+}
+
+@font-face {
+  font-family: 'ProxLight';
+  src: url("../fonts/ProximaNova-Light.otf");
+}
+
+/* Global Variables */
+/* Reusable CSS */
+/* line 36, ../scss/styleinput.scss */
+.ssm-top {
+  margin-top: 5px;
+}
+
+/* line 38, ../scss/styleinput.scss */
+.sm-top {
+  margin-top: 15px;
+}
+
+/* line 40, ../scss/styleinput.scss */
+.md-top {
+  margin-top: 25px;
+}
+
+/* line 42, ../scss/styleinput.scss */
+.lg-top {
+  margin-top: 50px;
+}
+
+/* line 44, ../scss/styleinput.scss */
+.xlg-top {
+  margin-top: 70px;
+}
+
+/* line 46, ../scss/styleinput.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 48, ../scss/styleinput.scss */
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 50, ../scss/styleinput.scss */
+body {
+  color: #fcfcfc;
+  font-family: "RonniaReg";
+  background: url("../images/bg.png") repeat top left;
+}
+
+/* line 56, ../scss/styleinput.scss */
+h1, h2, h3, h4, h5, label {
+  color: #fcfcfc;
+  font-family: "RonniaReg";
+}
+
+/* line 61, ../scss/styleinput.scss */
+p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: "ProxLight";
+}
+
+/* line 67, ../scss/styleinput.scss */
+.img-holder {
+  height: 120px;
+  overflow-y: hidden;
+  padding: 3px !important;
+  background-color: transparent;
+}
+/* line 74, ../scss/styleinput.scss */
+.img-holder img {
+  width: 100%;
+}
+/* line 76, ../scss/styleinput.scss */
+.img-holder label {
+  margin-top: 5px;
+}
