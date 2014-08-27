@@ -43,7 +43,7 @@
 
 /* line 44, ../scss/styleinput.scss */
 .xlg-top {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 /* line 46, ../scss/styleinput.scss */
@@ -61,7 +61,7 @@ body, html {
 body {
   color: #fcfcfc;
   font-family: "RonniaReg";
-  background: url("../images/bg.png") repeat top left;
+  background: url("../images/bg_enrico.png") repeat top left;
 }
 
 /* line 56, ../scss/styleinput.scss */
