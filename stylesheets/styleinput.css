@@ -19,6 +19,11 @@
   src: url("../fonts/ProximaNova-Light.otf");
 }
 
+.profile {
+  min-height: 200px;
+  max-height: 200px;
+}
+
 /* Global Variables */
 /* Reusable CSS */
 /* line 36, ../scss/styleinput.scss */
@@ -34,6 +39,9 @@
 /* line 40, ../scss/styleinput.scss */
 .md-top {
   margin-top: 25px;
+  margin-right: auto; 
+  margin-left: auto;
+  width: 200px;
 }
 
 /* line 42, ../scss/styleinput.scss */
@@ -61,7 +69,10 @@ body, html {
 body {
   color: #fcfcfc;
   font-family: "RonniaReg";
-  background: url("../images/bg_enrico.png") repeat top left;
+  background-color: #1f1f1f;
+  
+  /*background: url("../images/bg_enrico.png") repeat top left;*/
+  background: url("../images/dropsOnBlack.jpg") no-repeat center center fixed;
 }
 
 /* line 56, ../scss/styleinput.scss */
